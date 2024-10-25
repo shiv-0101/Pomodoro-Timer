@@ -1,6 +1,117 @@
 body {
-    background-color: antiquewhite;
+    background-color: #1b1f3b;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;
 }
+
+h1 {
+    margin: 0 auto 10px auto;
+    color: #ffffff;
+  }
+  
+  p {
+    margin: 0;
+  }
+  .app-functions{
+    margin: 50px 0;
+    background-color: #10132b;
+    padding: 10px 20px;
+    border-radius: 80px;
+  }
+  .app-functions-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    color: #888888;
+    cursor: pointer;
+  }
+  #active{
+    background-color: #cd5c5c;
+    color: #10132b;
+    padding: 20px 20px;
+    border-radius: 80px;
+  }
+  .app-container {
+    width: 450px;
+    height: 420px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .app-circle {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle-shape {
+    pointer-events: none;
+  }
+
+  .semi-circle {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid 6px;
+  }
+  
+  .left-side {
+    top: 0;
+    left: 0;
+    transform-origin: right center;
+    transform: rotate(0deg);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-right: none;
+    z-index: 1;
+  }
+  
+   .right-side {
+    top: 0;
+    left: 100px;
+    transform-origin: left center;
+    transform: rotate(0deg);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: none;
+  }
+
+  .circle {
+    border-color: #cd5c5c;
+  }
+  
+  .circle-mask {
+    border-color: #e85a71;
+  }
+  .app-counter-box {
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 250%;
+    position: relative;
+    top: 50px;
+    color: #d8e9ef;
+  }
+  
+  button {
+    position: relative;
+    top: 50px;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d8e9ef;
+  }
+  
+  button:hover {
+    color: #90c0d1;
+  }
